@@ -6,7 +6,7 @@ const {Server} = require('socket.io')
 
 
 const connectDB = require('./config/db')
-const roomRoutes = require('./routes/rooms')
+const roomRoutes = require('./routes/room')
 
 const app = express()
 const server = http.createServer()
