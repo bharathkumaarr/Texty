@@ -1,5 +1,5 @@
 const corsOptions = {
-    origin: "https://localhost:5173",
+    origin: "https://usetexty.vercel.app",
     methods: ["GET, POST"],
     credentials: true
 };
