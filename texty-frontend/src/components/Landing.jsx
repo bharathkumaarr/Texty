@@ -4,7 +4,7 @@ import { useState } from 'react'
 function Landing({onCreateRoom, onJoinRoom}) {
     const [roomCode, setRoomCode] = useState('')
   return (
-    <div className='font-mono min-h-screen flex flex-col items-center justify-center bg-slate-200 text-neutral-900 p-4'>
+    <div className='font-mono min-h-screen flex flex-col items-center justify-center bg-gray-200 text-neutral-900 p-4'>
         <h1 className='text-6xl font-bold mb-2'> Texty</h1>
         {/* <h6 className='text-lg'>------------------------------------------------------------</h6> */}
         <h1 className='text-3xl mb-2'>Create instant chat rooms with Texty.</h1>
@@ -13,7 +13,7 @@ function Landing({onCreateRoom, onJoinRoom}) {
         <h6 className='text-lg'>------------------------------------------------------------</h6>
         <button
             onClick={onCreateRoom}
-            className='bg-slate-200 hover:bg-gray-300 h-11 w-56 rounded-xl text-lg font-semibold mb-2 border border-neutral-900'
+            className='bg-gray-200 hover:bg-gray-300 h-11 w-56 rounded-xl text-lg font-semibold mb-2 border border-neutral-900'
         >
             Create New Room
         </button>
@@ -30,6 +30,16 @@ function Landing({onCreateRoom, onJoinRoom}) {
                 disabled={!roomCode}
                 className='bg-neutral-900 hover:bg-neutral-800 h-11 w-56 rounded-xl border font-semibold disabled:opacity-50 text-slate-200 text-lg'> Join Room
             </button>
+        </div>
+
+        <div className='flex flex-col items-center mt-48 text-xs text-neutral-900'>
+            <h1>Give it a ⭐️ on github</h1>
+            <a href="https://github.com/bharathkumaarr/Texty" className='flex border rounded-full p-1 items-center hover:scale-102 border-neutral-900 transition-transform duration-300 ease-in-out hover:bg-gray-300 mt-1' target='_blank'>
+                <img className='h-8 mr-2 rounded-full' src="/bharathkumaarr-github.jpeg" alt=""/>
+                <h5 className='text-xs text-neutral-900'>@bharathkumaarr</h5>
+
+            </a>
+            
         </div>
     </div>
   )
