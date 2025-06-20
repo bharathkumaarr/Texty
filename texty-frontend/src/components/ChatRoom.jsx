@@ -38,12 +38,12 @@ function ChatRoom({socket, roomCode}) {
   return (
     <div className="font-mono h-screen bg-slate-200 text-neutral-900 flex flex-col p-4 items-center">
 
-      <div className='flex justify-between mb-4 w-5xl'>
+      <div className='flex sm:flex-row sm:justify-between sm:items-center  mb-4 w-full max-w-4xl'>
         <h1 className='text-2xl font-bold'> Texty</h1>
         <h2 className="text-2xl font-semibold">Room: {roomCode}</h2>
       </div>
 
-      <div className="flex-1 overflow-y-auto mb-4 p-2 rounded-2xl bg-gray-300 w-5xl">
+      <div className="flex-1 overflow-y-auto mb-4 p-2 rounded-2xl bg-gray-300 w-full max-w-4xl">
         {chat.map((item, index) => (
           <div key={index} className="mb-2">
             {item.system ? (
@@ -58,7 +58,7 @@ function ChatRoom({socket, roomCode}) {
         ))}
       </div>
 
-      <div className="flex w-5xl">
+      <div className="flex w-full max-w-4xl">
         <input
           type="text"
           placeholder="Type a message..."
