@@ -38,7 +38,7 @@ function ChatRoom({socket, roomCode}) {
   return (
     <div className="font-mono h-screen bg-slate-200 text-neutral-900 flex flex-col p-4 items-center">
 
-      <div className='flex sm:flex-row sm:justify-between sm:items-center  mb-4 w-full max-w-4xl'>
+      <div className='flex justify-between items-center  mb-4 w-full max-w-4xl'>
         <h1 className='text-2xl font-bold'> Texty</h1>
         <h2 className="text-2xl font-semibold">Room: {roomCode}</h2>
       </div>
