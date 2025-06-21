@@ -22,7 +22,7 @@ const io = new Server(server, {
 
 app.use(express.json())
 app.get('/', (req,res)=>{
-    res.send('textyy backend')
+    res.send('texty backend activated on render')
 })
 
 
