@@ -31,7 +31,7 @@ function Landing({onCreateRoom, onJoinRoom}) {
                 className='bg-neutral-900 hover:bg-neutral-800 h-11 w-56 rounded-xl border font-semibold disabled:opacity-50 text-slate-200 text-lg cursor-pointer'> Join Room
             </button>
         </div>
-        <h6 className='text-xs mt-2'>If backend isn't responding, <a href="https://texty-hdnc.onrender.com" target='_blank' className='underline'>Click here</a> and try again.</h6>
+        <h6 className='text-xs mt-2 text-red-500'>If backend isn't responding, <a href="https://texty-hdnc.onrender.com" target='_blank' className='underline'>Click here</a> and try again.</h6>
 
         <div className='flex flex-col items-center mt-48 text-xs text-neutral-900'>
             <h1>Give it a ⭐️ on github</h1>
