@@ -5,6 +5,7 @@ function Landing({onCreateRoom, onJoinRoom}) {
     const [roomCode, setRoomCode] = useState('')
   return (
     <div className='font-mono min-h-screen flex flex-col items-center justify-center bg-gray-200 text-neutral-900 p-4 selection:bg-gray-400 select-none'>
+        <h3 className='top-3 border p-2 rounded-3xl pl-4 pr-4'>NEW: Instant Video Chat Room Coming Soon!</h3>
         <h1 className='sm:text-6xl text-4xl font-bold mb-2 text-cente'>Texty</h1>
         {/* <h6 className='text-lg'>------------------------------------------------------------</h6> */}
         <h1 className='sm:text-3xl text-xl mb-2 text-center'>Create instant chat rooms with Texty.</h1>
@@ -32,7 +33,7 @@ function Landing({onCreateRoom, onJoinRoom}) {
             </button>
         </div>
         <h6 className='select-none text-xs mt-2 text-red-500'>If backend isn't responding, <a href="https://texty-hdnc.onrender.com" target='_blank' className='underline'>Click here</a> and try again.</h6>
-        <h3 className='absolute top-3 border p-2 rounded-3xl pl-4 pr-4'>NEW: Instant Video Chat Room Coming Soon!</h3>
+        
 
         <div className='flex flex-col items-center mt-48 text-xs text-neutral-900 select-none'>
             <h1>Give it a ⭐️ on github</h1>
